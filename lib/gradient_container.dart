@@ -14,6 +14,12 @@ class GradientContainer extends StatelessWidget{
   final Color color1;
   final Color color2;
 
+  //void: function doesnt expect input
+  // actived when "roll" button is clicked, returns one of the dice asset images randomly (1-6)
+  void rollDice() {
+
+  }
+
   @override
   Widget build(context) {
     return Container(
@@ -25,7 +31,20 @@ class GradientContainer extends StatelessWidget{
             )
           ),
           child:  Center(
-            child: Image.asset('assets/images/dice-1.png'),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                  Image.asset(
+                    'assets/images/dice-1.png', 
+                    width: 200,
+                  ),
+                 TextButton(
+                    onPressed: rollDice, 
+                    child: const Text('Roll! The! Dice!'),
+                  )
+              ],
+            )
           ),
         );
-}}
+  }
+}
