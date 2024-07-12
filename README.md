@@ -1,16 +1,14 @@
 # first_app
 
-A new Flutter project.
+Welcome to my Flutter project repository. I'm using this space to learn and create various Flutter/Dart applications. 
+Some of the cool projects I'll be working on include:
+- Randomized dice roll application
+- Quiz application.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+Resources that helped me get started:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Online documentation](https://docs.flutter.dev/).
