@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/styled_text.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget{
-  //It calls the constructor of the superclass (StatelessWidget) 
-  //and passes the key parameter to it
+  //It calls the constructor of the superclass (StatelessWidget) and passes the key parameter to it
   const GradientContainer(this.color1, this.color2,{super.key});
+
+  const GradientContainer.green({super.key}) : 
+    color1 = Colors.lightGreen, 
+    color2 = Colors.green;
 
   final Color color1;
   final Color color2;
@@ -22,8 +24,8 @@ class GradientContainer extends StatelessWidget{
               end: endAlignment,
             )
           ),
-          child: const Center(
-            child: StyledText('bnuy'),
+          child:  Center(
+            child: Image.asset('assets/images/dice-1.png'),
           ),
         );
 }}
