@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 //StatefulWidget - manage state inside widget, data may change over time and UI reflects that
@@ -15,13 +16,13 @@ class DiceRoller extends StatefulWidget{
 // flutter requires that these two classes be detached from each other
 class _DiceRollerState extends State<DiceRoller>{
 
-  var activeDiceImage = 'assets/images/dice-2.png';
+  var currentDiceRoll = 2;
 
   //void: function doesnt expect input
   // actived when "roll" button is clicked, returns one of the dice asset images randomly (1-6)
   void rollDice() {
     setState(() {
-      activeDiceImage = 'assets/images/dice-4.png';
+      currentDiceRoll = Random().nextInt(6) + 1;//6 sides of dice, inclusive (1-6)
     });
   }
 
@@ -32,7 +33,7 @@ class _DiceRollerState extends State<DiceRoller>{
               mainAxisSize: MainAxisSize.min,
               children: [
                   Image.asset(
-                    activeDiceImage, 
+                    'assets/images/dice-$currentDiceRoll.png', 
                     width: 200,
                   ),
                   const SizedBox(height: 20), //alt to padding
