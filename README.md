@@ -3,7 +3,6 @@
 Welcome to my Flutter project repository. I'm using this space to learn and create various Flutter/Dart applications. 
 Some of the cool projects I'll be working on include:
 - Randomized dice roll application
-- Quiz application.
 
 ## Getting Started
 
