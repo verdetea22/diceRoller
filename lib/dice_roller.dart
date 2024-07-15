@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
+final randomizer = Random();
+
 //StatefulWidget - manage state inside widget, data may change over time and UI reflects that
 class DiceRoller extends StatefulWidget{
   const DiceRoller({super.key});
@@ -22,7 +24,7 @@ class _DiceRollerState extends State<DiceRoller>{
   // actived when "roll" button is clicked, returns one of the dice asset images randomly (1-6)
   void rollDice() {
     setState(() {
-      currentDiceRoll = Random().nextInt(6) + 1;//6 sides of dice, inclusive (1-6)
+      currentDiceRoll = randomizer.nextInt(6) + 1;//6 sides of dice, inclusive (1-6)
     });
   }
 
